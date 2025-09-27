@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - MKstream</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header><h1>Admin Dashboard</h1></header>
+  <main>
+    <section id="videoEditor">
+      <h2>Video Editor</h2>
+      <form id="uploadForm">
+        <input type="text" placeholder="Series Title" required>
+        <input type="number" placeholder="Episode Number" required>
+        <input type="text" placeholder="Episode Name">
+        <input type="url" placeholder="Thumbnail URL">
+        <input type="url" placeholder="Video URL">
+        <textarea placeholder="Embed Code"></textarea>
+        <input type="url" placeholder="Subtitle URL">
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+    <section id="webEditor">
+      <h2>Web Editor</h2>
+      <label>Change Web Name: <input type="text"></label>
+      <label>Logo URL: <input type="url"></label>
+      <label>Theme Color: <input type="color"></label>
+      <label>Password: <input type="password"></label>
+      <button>Save</button>
+    </section>
+    <section id="adsManager">
+      <h2>Ads Manager</h2>
+      <textarea placeholder="Paste Ad Code"></textarea>
+      <input type="number" placeholder="Ad frequency (mins)">
+      <button>Save Ads</button>
+    </section>
+    <section id="seoManager">
+      <h2>SEO Manager</h2>
+      <button id="updateSEO">Auto Update SEO</button>
+    </section>
+  </main>
+</body>
+</html>

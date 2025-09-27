@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MKstream v25</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <button id="menuToggle">☰</button>
+    <div class="logo">MKstream</div>
+    <div class="search-container">
+      <button id="searchToggle">🔍</button>
+      <input type="text" id="searchBar" placeholder="Search..." />
+    </div>
+    <a href="admin.html" class="admin-link"><div class="admin-box">Admin</div></a>
+  </header>
+
+  <aside id="sideMenu" class="side-menu">
+    <button id="closeMenu">✖</button>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="category.html?cat=anime">Anime</a>
+      <a href="category.html?cat=donghua">Donghua</a>
+      <a href="category.html?cat=cartoon">Cartoon</a>
+      <a href="category.html?cat=serial">Serial</a>
+      <a href="category.html?cat=webseries">Web Series</a>
+      <a href="category.html?cat=movies">Movies</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="specialToday">
+      <h2>Today’s Specials (and Yesterday until updated)</h2>
+      <div class="grid"></div>
+    </section>
+    <section id="recentlyUpload"><h2>Recently Uploaded</h2><div class="grid"></div></section>
+    <section id="mostViewed"><h2>Most Viewed</h2><div class="grid"></div></section>
+    <div class="pagination"><button id="loadMore">Load More</button></div>
+  </main>
+
+  <footer><p>© 2025 MKstream</p></footer>
+</body>
+</html>
